@@ -1,0 +1,168 @@
+@import url('https://fonts.google.com/specimen/Josefin+Sans');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.hero-section{
+    height: 55vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.m-1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.m-1{
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.m-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transform: translateY(45%);
+}
+
+.m-2{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.m-2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transform:translateY(-40%);
+
+}
+
+.main-search-box-continer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(3px);
+    gap: 20px;
+}
+
+.main-search-box-continer input{
+    height: 40px;
+    width: 30vw;
+    border-radius: 34px;
+    outline: none;
+    padding: 6px 30px;
+    border: 1px solid black;
+    font-size: 1.2em;
+    background-color: yellow;
+}.main-search-box-continer h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.main-search-box-continer h1 span{
+    color:red;
+}
+
+
+
+.categorias-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-title{
+    height: 3px;
+    width: 90vw;
+    background-color: black;
+    margin: 40px auto;
+    position: relative;
+}
+
+.main-title span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    padding: 1px 30px;
+    border-radius: 24px;
+}
+
+.categorie-card{
+    height: 280px;
+    width: 250px;
+    background-color: #e0dfdf;
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.categorie-type{
+    background-color: red;
+    width: 55%;
+    padding: 4px;
+    margin-top: 10px;
+    border-radius: 9px;
+}
+
+.categorie-card-img-container{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 14px;
+}
+
+.categorie-card-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 768px) {
+    .m-2{
+        display: none;
+    }
+
+    .main-search-box-continer input{
+        width: 70vw;
+        padding: 2px 30px;
+    }
+}
